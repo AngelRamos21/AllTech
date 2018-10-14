@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Share');
+
+
+
+*{
+box-sizing: border-box;
+
+
+}
+.p15{
+  padding: 0 15px;
+
+}
+
+body{
+  position: relative;
+
+}
+body::after {
+            content: "";
+            background: url(../images/fondooo.jpg);
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            background-size:cover;
+            z-index: -1;
+
+          }
+/*HEADER*/
+header{
+
+  background-color: 	#000000;
+
+}
+
+.titulo{
+  color:
+#9a9a9a;
+font-family: 'Lobster', cursive;
+font-weight: bold;
+
+
+}
+.logueo{
+margin-top: 20px;
+
+
+}
+.logueo input{
+  border-radius: 5px;
+  opacity: 1;
+  border-width: inherit;
+font-family: 'Share', cursive;
+margin:5px;
+
+
+}
+
+input::-webkit-input-placeholder {
+ font-size: 13px;
+}
+.logueo input:focus{
+
+  opacity: 1;
+  outline: none;
+box-shadow: 0 0 15px #fff;
+
+}
+.logueo button{
+border-radius: 5px;
+box-shadow: 0px 2px 0px #4b4c4c;
+font-family: 'Share', cursive;
+background:#9a9a9a;
+border:none;
+color: #292929;
+
+
+}
+.logueo button:hover{
+background:  #9a9a9a;
+#9a9a9a
+
+}
+.logueo button span{
+font-size: 13px;
+
+}
+.logueo button:focus{
+box-shadow: 0px 0px 0px;
+background:  #9a9a9a;
+padding-top: 7px;
+border: none;
+
+
+}
+.logueo button:active{
+background:  #9a9a9a;
+
+}
+
+.logueo a{
+  position: relative;
+  right: 190px;
+  top:-7px;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+/*Main*/
+main input::-webkit-input-placeholder
+{
+
+font-size: 18px;
+opacity: 0.5;
+
+
+}
+.registro {
+font-family: 'Share', cursive;
+background: rgba(0, 0, 0, 0.1);
+width: 100%;
+padding: 10px 20px;
+box-sizing: border-box;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 7px;
+text-align: center;
+
+
+
+
+}
+
+
+
+}
+.registro h2{
+margin: 0;
+font-size: 35px;
+text-align: center;
+margin-bottom: 20px;
+font-weight: bold;
+
+
+
+}
+.registro input{
+  border-radius: 5px;
+width: 100%;
+margin-bottom: 10px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border-width: inherit;
+
+}
+.registro input:focus{
+
+  opacity: 1;
+  outline: none;
+box-shadow: 0 0 15px #fff;
+
+}
+.registro button{
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px #4b4c4c;
+  font-family: 'Share', cursive;
+  background:#9a9a9a;
+  border: none;
+  color: #000000;
+
+
+}
+.registro button:focus{
+box-shadow: 0px 0px 0px;
+
+margin-top: 7px;
+border: none;
+}
+.registro button:hover{
+background:  #9a9a9a;
+}
+.registro p{
+  margin-top: 20px;
+  text-align: center;
+width: 100%;
+
+}
+.registro p a{
+color: black;
+font-weight: bold;
+
+}
+.presentacion{
+  font-family: 'Share', cursive;
+  background: rgba(0,0,0,0.1);
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+
+}
+.presentacion h2{
+  margin: 0;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+
+
+/*FOOTER*/
+footer{
+  background:#000;
+margin-top: 120px;
+}
+footer a {
+  display: inline-block;
+ margin-top: 11px;
+ color: #9a9a9a;
+
+}
+footer small {
+  display: inline-block;
+ margin-top: 11px;
+ color:#ffff;
+
+}
+footer a:hover{
+
+
+ color:	#55accf;
+ text-decoration: none;
+
+}

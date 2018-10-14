@@ -1,0 +1,99 @@
+@media (max-width: 767.2px){
+.titulo{
+text-align:  center;
+
+}
+.logueoCell {
+font-family: 'Share', cursive;
+background: rgba(0, 0, 0, 0.1);
+width: 100%;
+padding: 10px 20px;
+box-sizing: border-box;
+margin-top: 50px;
+margin-bottom: 20px;
+border-radius: 7px;
+text-align: center;
+
+
+
+
+}
+.logueoCell input:focus{
+
+  opacity: 1;
+  outline: none;
+box-shadow: 0 0 15px #fff;
+
+}
+.logueoCell input{
+  border-radius: 5px;
+width: 100%;
+margin-bottom: 10px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border-width: inherit;
+
+}
+.logueoCell button{
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px #4b4c4c;
+  font-family: 'Share', cursive;
+  background:#9a9a9a;
+  border: none;
+  color: #292929;
+ font-size: 15px;
+ width: 100%;
+}
+.logueoCell button:focus{
+box-shadow: 0px 0px 0px;
+background-color:#9a9a9a;
+margin-top: 7px;
+outline: inherit;
+}
+.logueoCell button:hover{
+background:  #9a9a9a;
+}
+.logueoCell p{
+  margin-top: 20px;
+  text-align: center;
+width: 100%;
+
+}
+.logueoCell a{
+color:#000000;
+
+}
+main small{
+  display: inline-block;
+    position: absolute;
+    bottom: 61px;
+
+    padding: 3px;
+    font-size: 17px;
+}
+main button{
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px #4b4c4c;
+  font-family: 'Share', cursive;
+  background:#9a9a9a;
+  border: none;
+  color: #292929;
+ font-size: 15px;
+ width: 50%;
+}
+main button:focus{
+box-shadow: 0px 0px 0px;
+background-color:#9a9a9a;
+margin-top: 7px;
+outline: inherit;
+}
+main button:hover{
+background:  #9a9a9a;
+}
+footer{
+  background:#000;
+margin-top: 197px;
+}
+
+}
