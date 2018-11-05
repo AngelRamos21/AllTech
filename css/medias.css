@@ -2,30 +2,51 @@
 .titulo{
 text-align:  center;
 
+
 }
-.logueoCell {
+body{
+ background-color: #000000;
+}
+
+header{
+background: rgba(0, 0, 0, 0);
+
+
+}
+.tituloCell{
+
+background-color: #000000;
+
+
+}
+.logueoCol{
+background: rgba(0, 0, 0, 0);
+
+}
+.logueoForm {
 font-family: 'Share', cursive;
-background: rgba(0, 0, 0, 0.1);
+background: rgba(0, 0, 0, 0.5);
 width: 100%;
-padding: 10px 20px;
+padding: 30px 10px 10px 10px;
 box-sizing: border-box;
-margin-top: 50px;
-margin-bottom: 20px;
+margin-top: 100px;
+margin-bottom: 10px;
 border-radius: 7px;
 text-align: center;
 
 
 
 
+
 }
-.logueoCell input:focus{
+.logueoForm input:focus{
 
   opacity: 1;
   outline: none;
 box-shadow: 0 0 15px #fff;
 
 }
-.logueoCell input{
+.logueoForm input{
   border-radius: 5px;
 width: 100%;
 margin-bottom: 10px;
@@ -33,11 +54,13 @@ padding: 7px;
 box-sizing: border-box;
 font-size: 17px;
 border-width: inherit;
+border: none;
 
 }
-.logueoCell button{
+.logueoForm button{
   border-radius: 5px;
   box-shadow: 0px 2px 0px #4b4c4c;
+  margin-top: 10px;
   font-family: 'Share', cursive;
   background:#9a9a9a;
   border: none;
@@ -45,23 +68,57 @@ border-width: inherit;
  font-size: 15px;
  width: 100%;
 }
-.logueoCell button:focus{
+.logueoForm button:focus{
 box-shadow: 0px 0px 0px;
 background-color:#9a9a9a;
 margin-top: 7px;
 outline: inherit;
 }
-.logueoCell button:hover{
+.logueoForm button:hover{
 background:  #9a9a9a;
 }
-.logueoCell p{
-  margin-top: 20px;
+.logueoForm p{
+  color: white;
+  margin-top: 10px;
   text-align: center;
 width: 100%;
 
 }
-.logueoCell a{
-color:#000000;
+.logueoForm a{
+  display: inline-block;
+  margin-top: 20px;
+ color:#ffffffff;
+ left: 0px;
+
+}
+.logueoBtn button{
+
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px #4b4c4c;
+  font-family: 'Share', cursive;
+  background:#9a9a9a;
+  border: none;
+  color: #292929;
+  font-size: 15px;
+  width: 50%;
+text-align: center;
+}
+.logueoBtn button:focus {
+  box-shadow: 0px 0px 0px;
+  background-color:#9a9a9a;
+  margin-top: 7px;
+  outline: inherit;
+
+}
+.logueoBtn button:hover{
+background:  #9a9a9a;
+
+}
+
+.logueoBtn a{
+color:#ffffffff;
+opacity:0.7;
+font-size: 13px;
 
 }
 main small{
