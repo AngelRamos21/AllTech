@@ -1,0 +1,34 @@
+body{
+background-color: LightGray;
+font-family: sans-serif;
+background-image: url(../imagenes/fondo.png);
+<textarea:focus {
+  background-color: black
+}
+
+}
+h1{
+  text-align: center;
+  font-size: 50px
+  border-radius: 35px 0px 35px 0px;
+-moz-border-radius: 35px 0px 35px 0px;
+-webkit-border-radius: 35px 0px 35px 0px;
+border: 2px solid black;
+  }
+  ul{
+    font-size: 20px
+
+  }
+  li{
+    text-decoration:  underline;
+    }
+
+  p{
+  text-align: justify;
+  font-size: 50px
+  font-family: 'Lato', sans-serif;
+  }
+
+  @media (max-width: 800px) {
+
+  }
