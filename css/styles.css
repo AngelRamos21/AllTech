@@ -8,6 +8,11 @@ box-sizing: border-box;
 
 
 }
+.titulo:hover{
+text-decoration: none;
+
+
+}
 .p15{
   padding: 0 15px;
 
@@ -59,6 +64,19 @@ margin:5px;
 
 
 }
+form .recordameInput{
+  position: relative;
+  right:7.5em;
+  top: 2px;
+
+}
+form .recordameSpan{
+color: #ffffffff;
+position: relative;
+right:10em;
+ opacity: 0.7;
+ font-size: 12px;
+}
 
 input::-webkit-input-placeholder {
  font-size: 13px;
@@ -104,12 +122,14 @@ background:  #9a9a9a;
 
 .logueoForm a{
   position: relative;
-  right: 181px;
-  top:-7px;
+  right: 1em ;
+  bottom:24px;
   color: #fff;
   opacity: 0.7;
   font-size: 12px;
 }
+
+
 
 /*Main*/
 main input::-webkit-input-placeholder
