@@ -94,6 +94,9 @@ return $errores;
 
 
 
+
+//Validar Logueo
+
 public function validarLogueo($datos , DateBase $base){
 
 foreach ($datos as $key => $value) {
@@ -130,7 +133,22 @@ return $errores;
 }
 
 
+public function validarEmailoUsuario($datos , DateBase $base)
+    {
+      $MailUser = trim( $datos['EmailUsuario']);
+      $error="";
 
+      if(empty($MailUser)){
+          $error = "El email o el nombre de usuario esta vacio ";
+
+      }else if ($base->traerUsuario($MailUser) == NULL)
+          {
+           $error = "El usuario no existe";
+
+         }
+
+   return $error;
+   }
 
 
 
