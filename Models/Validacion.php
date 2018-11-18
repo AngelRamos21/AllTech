@@ -132,7 +132,7 @@ $errores['contrasenaL'] = "La contraseña es incorrecta";
 return $errores;
 }
 
-
+// VALIDACION SI EXISTE EL USUARIO
 public function validarEmailoUsuario($datos , DateBase $base)
     {
       $MailUser = trim( $datos['EmailUsuario']);
@@ -140,7 +140,6 @@ public function validarEmailoUsuario($datos , DateBase $base)
 
       if(empty($MailUser)){
           $error = "El email o el nombre de usuario esta vacio ";
-
       }else if ($base->traerUsuario($MailUser) == NULL)
           {
            $error = "El usuario no existe";

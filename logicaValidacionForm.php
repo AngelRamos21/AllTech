@@ -79,7 +79,31 @@ if($_POST)
                  }else if ($_POST['form'] == "recuperar" )
                         {
                          $errorEmail = $validacion->validarEmailoUsuario($_POST, $base);
+                          if($errorEmail == "")
+                          {
+                            $usuario=$base->traerUsuario($_POST['EmailUsuario']);
+                            $email=$usuario->getEmail();
+                            $idUser=$usuario->getId();
+                            $nameUser=$usuario->getNombreUsuario();
+                            $tokenPass=$base->generarTokken($idUser);
 
+                            //MANDAR Email
+                            $url='http://'.$_SERVER["SERVER_NAME"].'/php/AllTech/cambiarPass.php?idUser='.$idUser.'&token='.$tokenPass;
+                            $asunto ="Recuperar Contraseña-AllTech";
+                            $cuerpo=$nameUser.': <br><br> Has solicitado un cambio de contraseña.<br> Para restaurar la contraseña por favor valla a la siguiente pagina <a href='.$url.'>'.$url.'</a>';
+                            if(mail($email,$asunto,$cuerpo) )
+                                {?>
+                                  <script>
+                                   window.alert("Le hemos enviado un email a:".$email." ");
+                                      header("location:index.php");exit;
+                                  </script>
+
+                          <?php}else {?>
+                                    <script>
+                                    window.alert("Error al enviar email");
+                                    </script>
+                              <?php }
+                          }
 
 
                         }

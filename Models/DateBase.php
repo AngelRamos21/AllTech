@@ -57,5 +57,21 @@ $usuarioFormatoArray = $consulta->fetch();
 
 }
 
+function generarTokken($id)
+        {
+        $token=bin2hex(random_bytes(64));
 
+        $consulta= $this->conn->prepare('UPDATE usuario SET TokenPass = :token , SolicitudPass = 1 , WHERE id = :id' );
+
+        $consulta->bindValue(":token",$token);
+        $consulta->bindValue(":id",$id);
+
+        $consulta->execute();
+
+        return $token;
+
+
+
+         }
+        
 }
