@@ -4,7 +4,7 @@
 if(isset($_COOKIE['logueado']))
   {
    $emailOusuario= $_COOKIE['logueado'];
-   header("location:logueado.php?emailOusuario=$emailOusuario");exit;
+   header("location:perfil.php?emailOusuario=$emailOusuario");exit;
   }
 
 $nombre = "";
@@ -44,7 +44,7 @@ if($_POST)
                    $aute->recordame($nombreL);
                    }
                $emailOusuario = $nombreL;
-               header("location:logueado.php?emailOusuario=$emailOusuario");exit;
+               header("location:perfil.php?emailOusuario=$emailOusuario");exit;
                }
              //LOGICA PARA EL REGISTRO
           } else if ($_POST['form'] == "registro" )

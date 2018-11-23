@@ -2,11 +2,11 @@
         <div class="row justify-content-center ">
             <div class="col-md-12 col-lg-10  ">
               <div class="row align-items-center justify-content-center   ">
-                       <div class="tituloCell col-sm-12 col-md-4">
+                       <div class="tituloCell col-sm-12 col-md-1">
                           <a class="titulo"href="index.php" > <h1 class="titulo">AllTech</h1></a>
                        </div>
 
-                       <div class="logueoCol col-sm-12 col-md-8 text-right ">
+                       <div class="logueoCol col-sm-12 col-md-11 text-right ">
                            <form class="logueoForm  " action="index.php" method="post">
                                 <span style="color:red;font-size:12px; position:relative;"><?php echo $erroresL['nombreL']; ?></span>
                                  <input class="" type="text" name="nombreL" value="<?php echo $nombreL; ?>" placeholder=" Nombre de Usuario">

@@ -18,7 +18,7 @@ class DateBase
 	}
 
   function guardarUsuario(Usuario $usuario) {
-  		$query = $this->conn->prepare("Insert into usuario values(default, :email,:nombreC,:nombreUsuario, :contrasena)");
+  		$query = $this->conn->prepare("Insert into usuario values(default, :email,:nombreC,:nombreUsuario, :contrasena,default ,default)");
 
   		$query->bindValue(":email", $usuario->getEmail());
   		$query->bindValue(":nombreC", $usuario->getNombreC());
@@ -57,21 +57,5 @@ $usuarioFormatoArray = $consulta->fetch();
 
 }
 
-function generarTokken($id)
-        {
-        $token=bin2hex(random_bytes(64));
 
-        $consulta= $this->conn->prepare('UPDATE usuario SET TokenPass = :token , SolicitudPass = 1 , WHERE id = :id' );
-
-        $consulta->bindValue(":token",$token);
-        $consulta->bindValue(":id",$id);
-
-        $consulta->execute();
-
-        return $token;
-
-
-
-         }
-        
 }

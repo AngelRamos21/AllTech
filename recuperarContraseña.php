@@ -1,12 +1,6 @@
 <?php
 require_once('autoload.php');
 include("logicaValidacionForm.php");
-
-
-
-
-
-
  ?>
 
  <!DOCTYPE html>
