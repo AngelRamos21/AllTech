@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Share');
 
-
-
 *{
 box-sizing: border-box;
 
 
 }
-.titulo:hover{
-text-decoration: none;
-
-
-}
-.p15{
-  padding: 0 15px;
-
+html{
+  width:100%;
+  height: 100%;
+  position: relative;
 }
 
 body{
-  position: relative;
+width:100%;
+height:100%;
 
 }
 body::after {
@@ -35,6 +30,19 @@ body::after {
             z-index: -1;
 
           }
+
+
+.titulo:hover{
+text-decoration: none;
+
+
+}
+.p15{
+  padding: 0 15px;
+
+}
+
+
 /*HEADER*/
 header{
   background-color:rgba(0, 0, 0, 0.2);
@@ -132,6 +140,7 @@ background:  #9a9a9a;
 
 
 /*Main*/
+
 main input::-webkit-input-placeholder
 {
 
@@ -198,7 +207,6 @@ box-shadow: 0 0 15px #fff;
 }
 .registro button:focus{
 box-shadow: 0px 0px 0px;
-
 margin-top: 7px;
 border: none;
 }
@@ -239,7 +247,10 @@ font-weight: bold;
 /*FOOTER*/
 footer{
   background:#000;
-margin-top: 120px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+
 }
 footer a {
   display: inline-block;

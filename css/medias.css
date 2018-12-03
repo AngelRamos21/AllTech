@@ -1,4 +1,21 @@
 @media (max-width: 767.2px){
+  *
+{
+  box-sizing: border-box;
+}
+  html{
+    position: relative;
+      min-height: 700px;
+    width: 100%;
+
+  }
+  body{
+ width: 100%;
+ height: 100%;
+
+  }
+
+
 .titulo{
 text-align:  center;
 color:#9a9a9a;
@@ -48,7 +65,7 @@ background: rgba(0, 0, 0, 0.5);
 width: 100%;
 padding: 30px 10px 10px 10px;
 box-sizing: border-box;
-margin-top: 100px;
+
 margin-bottom: 10px;
 border-radius: 7px;
 text-align: center;
@@ -151,7 +168,6 @@ main small{
   display: inline-block;
     position: absolute;
     bottom: 61px;
-
     padding: 3px;
     font-size: 17px;
 }
@@ -176,7 +192,29 @@ background:  #9a9a9a;
 }
 footer{
   background:#000;
-margin-top: 197px;
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+
+}
+footer a {
+  display: inline-block;
+ margin-top: 11px;
+ font-size: 10px;
+ color: #9a9a9a;
+
+}
+footer small {
+  display: inline-block;
+ margin-top: 11px;
+  font-size:7px;
+ color:#ffff;
+
+}
+footer a:hover{
+ color:	#55accf;
+ text-decoration: none;
+
 }
 
 }

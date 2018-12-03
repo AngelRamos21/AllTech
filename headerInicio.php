@@ -10,9 +10,10 @@
                            <form class="logueoForm  " action="index.php" method="post">
                                 <span style="color:red;font-size:12px; position:relative;"><?php echo $erroresL['nombreL']; ?></span>
                                  <input class="" type="text" name="nombreL" value="<?php echo $nombreL; ?>" placeholder=" Nombre de Usuario">
-
-                                 <span style="color:red;font-size:12px;"><?php echo $erroresL['contrasenaL']; ?></span>
+                                  <span class=""style="color:red;font-size:12px;"><?php echo $erroresL['contrasenaL']; ?></span>
                                 <input class="" type="password" name="contrasenaL" value="" placeholder="  Contraseña">
+
+
 
                                  <input type="hidden" name="form" value="login">
                                  <button type="submit" class="btn btn-default btn-sm"><span> Iniciar Sesión</span> </button>

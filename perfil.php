@@ -23,7 +23,7 @@ $usuario = $base->traerUsuario($emailUsuario);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title><?php echo $usuario->getNombreC(); ?></title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -86,74 +86,93 @@ $usuario = $base->traerUsuario($emailUsuario);
     </header>
 
 
-      <section class="p15 mt-1">
-        <div class="row justify-content-center">
-          <div class=" col-md-10">
-            <div class="row align-items-center justify-content-center">
-              <article class="col-md-7 ">
+	<section >
+			<div class="row ">
+							<div class="slider col-12 ">
+									<ul>
+											<li>
+											<img src="./images/fondo1.jpg" alt="">
+											</li>
+											<li>
+											<img src="./images/fondoo.jpg" alt="">
+											</li>
+											<li>
+											<img src="./images/amd.jpg" alt="">
+											</li>
+											<li>
+											<img src="./images/portada.jpg" alt="">
+											</li>
+											</ul>
+							</div>
 
-                    <div class="img1">
-                    <img src="images/pc.jpg">
+							<div class="perfil col-5	 align-self-start">
+								 <img src="./images/perfil.jpg" alt="">
+								 <span class="nameUsuario"><?php echo $usuario->getNombreC(); ?></span>
+						 </div>
+			</div>
 
-                    </div>
+  </section>
+	<main class="p15 ">
+  <section>
+		<div class="row mt-4">
+					<div class="informacion col-3 mt-5 ">
+             <h5>Informacion</h5>
+						 <hr>
+						 <ul>
+						 	<li>Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+							<hr>
+							<li>Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+							<hr>
+							<li>Copyright (c) 2018 Copyright Holder All Rights Reserved.</li>
+					    <hr>
+						 </ul>
+					</div>
+					<div class="posteo col-7 ml-3">
+						<div class="row mt-3">
+						 <div class="postImg col-2">
+							 <img src="./images/perfil.jpg" alt="">
+							 <span class="nameUsuarioPost"><?php echo $usuario->getNombreUsuario(); ?></span>
 
-              </article>
-              <aside class="col-md-5">
-                    <div class="info">
+						 </div>
+						 <div class=" post  col-10">
+							 <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.Copyright (c) 20Copyright (c) 2018 Copyright Holder All Rights Reserved.18 Copyright Holder All Rights Reserved.Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
 
-                        <h3>titulo</h3>
-                        <h6>ninguno</h6>
+						</div>
+						</div>
+						<div class="row mt-3">
+						 <div class="postImg col-2">
+							 <img src="./images/perfil.jpg" alt="">
+							 <span class="nameUsuarioPost"><?php echo $usuario->getNombreUsuario(); ?></span>
 
-                      <h3>experiencia laboral</h3>
-                      <h6>ninguna</h6>
+						 </div>
+						 <div class=" post  col-10">
+							 <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.Copyright (c) 20Copyright (c) 2018 Copyright Holder All Rights Reserved.18 Copyright Holder All Rights Reserved.Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
 
+						</div>
+						</div>
+						<div class="row mt-3">
+						 <div class="postImg col-2">
+							 <img src="./images/perfil.jpg" alt="">
+							 <span class="nameUsuarioPost"><?php echo $usuario->getNombreUsuario(); ?></span>
 
-                      <div class="">
+						 </div>
+						 <div class=" post  col-10">
+							 <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.Copyright (c) 20Copyright (c) 2018 Copyright Holder All Rights Reserved.18 Copyright Holder All Rights Reserved.Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
 
-
-                      </div>
-
-                    </div>
-                  </aside>
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-    </section>
-
-
-        <footer class="p15">
-                <div class="row justify-content-center">
-                  <div class="delimitar col-md-10">
-
-
-                             <div class="coment">
-                            <div class="col-md-2">
-
-                            </div>
-
-                             <form action="documento.php" method="POST">
-                                    <img href="">
-                                    <input type="text" name="comentarios" value="" placeholder="comparti tus ideas">
-                                    <button type="submit" class="btn btn-dark">comentar</button>
-                              </form>
-                             </div>
-                     <div class="muro">
-                       <a type="text" method"_POST"></a>
+						</div>
+						</div>
+					</div>
+		</div>
+ </section>
 
 
 
-                     </div>
 
 
 
-                </div>
-              </div>
-      </footer >
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 			    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
     <script src="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>

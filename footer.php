@@ -10,7 +10,7 @@
            <a href="#">Condiciones</a>
            -
            <a href="#">Privacidad</a>
-           -
+
            <small class="float-right">@2018 AllTech</small>
       </div>
   </div>

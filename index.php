@@ -12,11 +12,10 @@ include('logicaValidacionForm.php')
       <link rel="stylesheet" href="css/medias.css">
     <title>AllTech</title>
   </head>
-  <body>
+  <body >
 
 		<?php	include('headerInicio.php')	 ?>
   <main class="p15">
-
       <div class="row justify-content-center">
         <div class="col-md-12 col-lg-10">
              <div class="row">
@@ -68,15 +67,10 @@ include('logicaValidacionForm.php')
 											 <img src="images/grupo.png" alt="" width="30px" height="30px">	 Crea equipos de trabajo<br><br>
 													<br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>  <br><br>  <br> <br>
 										</div>
-                  </div>
-
+                  </div>  
                       </div>
                    </div>
-
-
              </div>
-
-
         </div>
 
       </div>

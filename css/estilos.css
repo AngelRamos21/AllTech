@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Share');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 
+
+
+ *{
+   font-family: inherit;
+
+ }
 .search-form .form-group {
   float: left!important;
   transition: all 0.35s, border-radius 0s;
@@ -153,17 +161,24 @@ box-sizing: border-box;
 
 
 header{
+  top:0px;
   background-color: #000000;
   color:#ffff;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
   height: 53.5px;
 }
 
 .titulo h1{
 
-  color:#9a9a9a;
+
   font-family: 'Lobster', cursive;
   font-weight: bold;
   display: inline-block;
+  -webkit-text-fill-color: #000000;
+   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-width: 0.01px;
 
   }
   .titulo:hover{
@@ -172,7 +187,6 @@ header{
     header button{
     border-radius: 5px;
     box-shadow: 0px 2px 0px #4b4c4c;
-    font-family: 'Share', cursive;
     background:#9a9a9a;
     border:none;
     color: #292929;
@@ -181,19 +195,17 @@ header{
     }
   header button:hover{
     background:  #9a9a9a;
-    #9a9a9a
+
 
     }
     .navBar a{
-     color:#9a9a9a;
+      -webkit-text-fill-color: #ffffff;
+       -webkit-text-stroke-color: #9a9a;
+       -webkit-text-stroke-width: 0.75px;
 
     }
 
-main{
-  background: #f2f2f2;
-  position: relative;
 
-}
 .img1 {
   width: 100%;
   height: 300px;
@@ -226,4 +238,181 @@ aside .info{
   background-color: #ffff;
   height: 100%;
   padding: 10px;
+}
+main{
+  margin:0px 130px;
+position: relative;
+
+
+}
+section{
+position: relative;
+
+
+}
+.slider{
+
+background-color: #ffffff;
+padding: 0px 0px;
+-webkit-border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px  rgba(0,0,0,0.67);
+height: 505px;
+
+
+}
+.slider img{
+width: 100%;
+height: 100%;
+  max-height: 462px;
+  border-bottom:  0.5px solid #202020;
+
+
+
+
+
+}
+.perfil{
+position: absolute;
+top: 67%;
+left: 10%;
+
+}
+.perfil img{
+      width: 220px;
+      height: 220px;
+      border-radius: 160px;
+      border: 3px solid #ffff;
+      box-shadow: 0px 10px 22px 2px  rgba(0,0,0,0.67);
+
+
+}
+.perfil .nameUsuario{
+font-family: 'Exo 2', sans-serif;
+font-size: 30px;
+position: relative;
+top: 44px;
+right:1%;
+font-weight:600;
+color:#202020;
+text-shadow: 2px 5px 8px rgba(100, 100, 100, 1);
+
+}
+
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+section .informacion{
+background-color: white;
+border-radius: 10px;
+box-shadow: 0px 2px 8px 0px  rgba(0,0,0,0.67);
+padding: 20px;
+height: 279px;
+
+
+}
+
+section form input{
+width: 63%;
+padding:50px;
+box-shadow: 0px 2px 8px 0px  rgba(0,0,0,0.67);
+border-radius: 10px;
+border-width: inherit;
+height: 111px;
+
+
+}
+.posteo{
+  overflow: hidden;
+
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+height: 100%
+}
+.posteo p{
+  margin-top: 15px
+}
+.posteo img{
+      width: 50px;
+      height: 50px;
+      position: relative;
+      left: 14%;
+      top: 23px;
+      border-radius: 160px;
+      border: 3px solid #ffff;
+
+
+
+}
+.posteo .nameUsuarioPost{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 15px;
+  position: relative;
+  top:20px;
+ left: 15%;
+  font-weight:600;
+  color:#202020;
+
+
+}
+.posteo .post{
+background-color: #ffffff;
+border-left: 1px solid #e9ecef;
+min-height: 120px;
+border-top-right-radius: 20px;
+
+
+}
+.posteo .postImg{
+background-color: #ffffff;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+
+
+
+
 }
