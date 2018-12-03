@@ -1,4 +1,4 @@
-<footer class="p15">
+<footer class="p15 mt-5">
   <div class="row justify-content-center">
       <div class=" col-md-12 col-lg-10 ">
            <a href="#">Sobre nosotros</a>
@@ -16,7 +16,7 @@
   </div>
 
 
-</footer>
+</footer >
 
     <script  src = "https://unpkg.com/ionicons@4.4.2/dist/ionicons.js" > </script>
   </body>

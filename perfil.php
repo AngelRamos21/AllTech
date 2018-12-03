@@ -105,7 +105,7 @@ $usuario = $base->traerUsuario($emailUsuario);
 											</ul>
 							</div>
 
-							<div class="perfil col-5	 align-self-start">
+							<div class="perfil col-7	 align-self-start">
 								 <img src="./images/perfil.jpg" alt="">
 								 <span class="nameUsuario"><?php echo $usuario->getNombreC(); ?></span>
 						 </div>
