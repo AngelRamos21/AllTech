@@ -28,7 +28,7 @@
   <a class="nav-link active" href="#!">Inicio</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#!"></a>
+  <a class="nav-link" href="#!">{{$firstName[0]}}</a>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="#!">Notificaciones</a>
@@ -85,7 +85,7 @@
 
             <div class="perfil col-7	 align-self-start">
                <img src="./images/perfil.jpg" alt="">
-               <span class="nameUsuario"></span>
+               <span class="nameUsuario">{{ Auth::user()->name }}</span>
            </div>
     </div>
 
@@ -106,6 +106,23 @@
            </ul>
         </div>
         <div class="posteo col-7 ml-3">
+          <div class="row">
+            <div class="col-12">
+               <form>
+                    <div class="form-group">
+                        <textarea class="form-control status-box" rows="3" placeholder="¿Qué tienes en mente?"></textarea>
+                    </div>
+                </form>
+
+            <div class="button-group pull-right">
+             <p class="counter">140</p>
+             <a href="#" class="btn btn-primary">Post</a>
+             </div>
+
+           <ul class="posts">
+              </ul>
+          </div>
+         </div>
           <div class="row mt-3">
            <div class="postImg col-2">
              <img src="./images/perfil.jpg" alt="">

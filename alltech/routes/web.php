@@ -19,10 +19,8 @@ Route::get('/', function () {
 route::get('/index' , 'HomeController@index');
 route::get('/recuperarContraseña' , 'HomeController@recContra');
 //Usuarios
-route::post('/registro' , 'UsuarioController@registrarUsuario');
 route::post('/perfil' , 'HomeController@index');
 route::get('/perfil' , 'UsuarioController@mostrarPerfil')->middleware('auth');
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');

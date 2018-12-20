@@ -31,8 +31,8 @@ class User extends Authenticatable
 
 
 
-    public function traerPorEmail($email)
+    public function posts($email)
     {
-      // code...
+      return $this->hasMany(post::class);
     }
 }
