@@ -39,7 +39,7 @@ class UsuarioController extends Controller
        $usuario->image= $imageName;
      }else{
 
-       $usuario->image= 'perfil.png';
+       $usuario->image= Auth::user()->image;
      }
 
      $usuario->save();
