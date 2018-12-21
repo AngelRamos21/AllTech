@@ -13,8 +13,10 @@ class UsuarioController extends Controller
 
       $name= Auth::user()->name;
       $firstName = explode(" ", $name);
+      $user=User::find( Auth::user()->id);
 
-        return view('usuario.perfil')->with('firstName',$firstName);
+      $posteos=$user->posts()->orderBy('created_at' ,'dec')->get();
+        return view('usuario.perfil')->with('firstName',$firstName)->with('posteos',$posteos);
     }
 
 }

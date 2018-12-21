@@ -106,56 +106,93 @@
            </ul>
         </div>
         <div class="posteo col-7 ml-3">
-          <div class="row">
-            <div class="col-12">
-               <form>
-                    <div class="form-group">
-                        <textarea class="form-control status-box" rows="3" placeholder="¿Qué tienes en mente?"></textarea>
-                    </div>
-                </form>
+          <div class="container">
 
-            <div class="button-group pull-right">
-             <p class="counter">140</p>
-             <a href="#" class="btn btn-primary">Post</a>
-             </div>
+<form class="" action="/post" method="post">
+  @csrf
+  <div class="form-group">
+        <textarea  name="post" class="form-control status-box" rows="3"  placeholder="¿Qué tienes en mente?"></textarea>
+  </div>
 
-           <ul class="posts">
-              </ul>
-          </div>
-         </div>
-          <div class="row mt-3">
-           <div class="postImg col-2">
-             <img src="./images/perfil.jpg" alt="">
-             <span class="nameUsuarioPost"></span>
 
-           </div>
-           <div class=" post  col-10">
-             <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.Copyright (c) 20Copyright (c) 2018 Copyright Holder All Rights Reserved.18 Copyright Holder All Rights Reserved.Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+ <div class="button-group pull-right">
+   <p class="counter">140</p>
+    <button type="submit" name="button" class="public btn btn-primary" >Publicar</button>
+ </div>
+</form>
+@forelse ($posteos as $post)
+  <ul class="posts">
+    <li>     <div class="row mt-3">
+               <div class="postImg col-2">
+               <img src="./images/perfil.jpg" alt="">
+               <span class="nameUsuarioPost">{{ Auth::user()->userName }}</span>
+               </div>
+               <div class=" post col-10">
+                 <p>{{$post->text}}</p>
+                 <hr>
+                 <small>Publicado: ({{$post->created_at}})</small>
+                 <small>{{$post->updated_at>$post->created_at?'Editado':''}}</small>
 
-          </div>
-          </div>
-          <div class="row mt-3">
-           <div class="postImg col-2">
-             <img src="./images/perfil.jpg" alt="">
-             <span class="nameUsuarioPost"></span>
+                 <?php $modal=$post->id; ?>
+                 <button type="button" class="btn btn-sm btn-primary pull-right mt-2 ml-1 mb-2" ng-click="edit(row);" data-toggle="modal" data-target="#editComment{{$modal}}">
+                <i class="fa fa-fw fa-pencil" ></i>
+                 </button>
+                 <div class="modal fade" id="editComment{{$modal}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLongTitle">Editar posteo</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     <div class="modal-body">
+                       <form method="post" action="{{url('/editarPost')}}">
+                           {{csrf_field()}}
+                           <div class="form-group">
+                           <textarea name="post" class="form-control status-box" rows="3">{{$post->text}}</textarea>
+                           </div>
+                           <input type="hidden" name="id_post" value="{{$post->id}}" />
 
-           </div>
-           <div class=" post  col-10">
-             <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.Copyright (c) 20Copyright (c) 2018 Copyright Holder All Rights Reserved.18 Copyright Holder All Rights Reserved.Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
 
-          </div>
-          </div>
-          <div class="row mt-3">
-           <div class="postImg col-2">
-             <img src="./images/perfil.jpg" alt="">
-             <span class="nameUsuarioPost"></span>
+                     </div>
 
-           </div>
-           <div class=" post  col-10">
-             <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.Copyright (c) 20Copyright (c) 2018 Copyright Holder All Rights Reserved.18 Copyright Holder All Rights Reserved.Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+                     <div class="modal-footer">
+                         <p class="counter pull-left">140</p>
+                        <button type="submit" name="button" class="public btn btn-primary pull-right" >Editar</button>
+                       <button type="button" class="btn btn-secondary pull-right ml-2" data-dismiss="modal">cerrar</button>
 
-          </div>
-          </div>
+
+
+                     </div>
+                      </form>
+                   </div>
+                 </div>
+               </div>
+
+
+
+
+                 <a href="/eliminarPost/{{$post->id}}">
+                 <button type="button" class="btn btn-sm btn-danger pull-right mt-2  mb-2 " ng-click="remove(row);">
+                 <i class="fa fa-fw fa-trash-o" ></i>
+                </button>
+                </a>
+               </div>
+
+            </div>
+     </li>
+  </ul>
+
+
+
+@empty
+
+@endforelse
+
+</div>
+
+
         </div>
   </div>
 </section>

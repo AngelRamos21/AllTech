@@ -416,3 +416,40 @@ border-bottom-left-radius: 20px;
 
 
 }
+.container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.counter {
+  display: inline;
+  margin: 0 20px 0 0 ;
+}
+
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.posts li {
+  background-color: #ffffff;
+  border-left: 1px solid #e9ecef;
+  min-height: 120px;
+  border-top-right-radius: 20px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.posts p{
+font-size: 25px;
+
+}
+.modal-backdrop
+{
+    opacity:0.92 !important;
+}

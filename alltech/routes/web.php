@@ -24,3 +24,7 @@ route::get('/perfil' , 'UsuarioController@mostrarPerfil')->middleware('auth');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+//posteos
+Route::post('/post', 'PostController@posteo');
+Route::get('/eliminarPost/{id}', 'PostController@eliminar');
+Route::post('/editarPost', 'PostController@editar');
