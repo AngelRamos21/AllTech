@@ -11,13 +11,7 @@
               <div class=" row align-items-center  ">
                 <a class="titulo"href="" method=""><h1 class="titulo">AllTech</h1></a>
                   <div  class=" col-md-4 col-sm-2 mt-3	">
-                     <form action="" class="search-form ">
-                         <div class="form-group has-feedback">
-                          <span class="glyphicon glyphicon-search form-control-feedback"><ion-icon name="search"></ion-icon></span>
-                          <input type="text" class="form-control" name="search" id="search" placeholder="Buscar">
-                          <label for="search" class="sr-only">Search</label>
-                          </div>
-                     </form>
+
                  </div>
 
 
@@ -25,16 +19,14 @@
                  <div class="col-6	">
                    <ul class="navBar nav justify-content-end grey lighten-4 ">
 <li class="nav-item">
-  <a class="nav-link active" href="#!">Inicio</a>
+  
 </li>
 <li class="nav-item">
   <a class="nav-link" href="#!">{{$firstName[0]}}</a>
 </li>
+
 <li class="nav-item">
-  <a class="nav-link" href="#!">Notificaciones</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link " href="#!">Configuracion</a>
+  <a class="nav-link " href="/editarPerfil">Editar Perfil</a>
 </li>
 <li class="nav-item">
   <a class="nav-link disabled"  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" style="text-decoration:none;"> <span><ion-icon style="font-size:20px;"name="exit">
@@ -84,7 +76,7 @@
             </div>
 
             <div class="perfil col-7	 align-self-start">
-               <img src="./images/perfil.jpg" alt="">
+               <img src="{{Storage::url('users/'.Auth::user()->image) }}" alt="">
                <span class="nameUsuario">{{ Auth::user()->name }}</span>
            </div>
     </div>
@@ -124,7 +116,7 @@
   <ul class="posts">
     <li>     <div class="row mt-3">
                <div class="postImg col-2">
-               <img src="./images/perfil.jpg" alt="">
+               <img src='{{Storage::url('users/'.Auth::user()->image) }}' alt="">
                <span class="nameUsuarioPost">{{ Auth::user()->userName }}</span>
                </div>
                <div class=" post col-10">

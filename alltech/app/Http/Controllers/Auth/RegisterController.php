@@ -68,11 +68,15 @@ class RegisterController extends Controller
       $name= preg_replace('/-+/', ' ', ucwords(strtolower($data['name'])));
       $userName=preg_replace('[\s+]','',$data['userName']);
 
+
+
+
         return User::create([
             'email' => $data['emailR'],
             'name' => $name,
             'userName' => $userName,
-            'password' => bcrypt($data['passwordR'])
+            'password' => bcrypt($data['passwordR']),
+            'image'=>  'perfil.png'
         ]);
     }
 }

@@ -21,6 +21,8 @@ route::get('/recuperarContraseña' , 'HomeController@recContra');
 //Usuarios
 route::post('/perfil' , 'HomeController@index');
 route::get('/perfil' , 'UsuarioController@mostrarPerfil')->middleware('auth');
+route::get('/editarPerfil' , 'UsuarioController@showEditarPerfil')->middleware('auth');
+route::post('/editarPerfil' , 'UsuarioController@editar');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

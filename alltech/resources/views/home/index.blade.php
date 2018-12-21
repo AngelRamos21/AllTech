@@ -81,8 +81,8 @@
                   <br><h2 style="display:inline-block;">Unite Ya! <br> <h5  style="display:inline-block;">a esta red Social de tecnicos informaticos</h5>  </h2> <br>    <br>
                   <div class="row justify-content-center ">
                     <div class="text-left ">
-                      <img src="images/live.png" alt="" width="30px" height="30px">		Chatea en vivo con los usuarios<br><br>
-                       <img src="images/grupo.png" alt="" width="30px" height="30px">	 Crea equipos de trabajo<br><br>
+                      <img src="images/live.png" alt="" width="30px" height="30px">		<br><br>
+                       <img src="images/grupo.png" alt="" width="30px" height="30px">	<br><br>
                           <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>  <br><br>  <br> <br>
                     </div>
                   </div>

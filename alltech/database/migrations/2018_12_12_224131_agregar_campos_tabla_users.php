@@ -14,7 +14,9 @@ class AgregarCamposTablaUsers extends Migration
      public function up()
      {
          Schema::table('users', function (Blueprint $table) {
-              $table->string('userName')->unique();
+               $table->string('userName')->unique();
+              $table->string('image', 100)->nullable()->default('perfil.png');
+
 
          });
      }
@@ -28,7 +30,7 @@ class AgregarCamposTablaUsers extends Migration
      {
        Schema::table('users', function (Blueprint $table) {
            $table->dropColumn('userName');
-
+            $table->dropColumn('image');
 
        });
      }

@@ -30,17 +30,16 @@
                                  <input type="hidden" name="form" value="login">
                                  <button type="submit" class="btn btn-default btn-sm"><span> Iniciar Sesión</span> </button>
                                     <br>
-                               <input class="recordameInput" type="checkbox" name="recordar"><span class="recordameSpan">Recordar contraseña</span>
-                               <br>
-                                 <a href="/recuperarContraseña">¿La olvidaste?</a>
-
+                            
                            </form>
 
                       </div>
                       <div class="logueoBtn col-12 text-center d-md-none">
                           <a href="#">¿No tienes una cuenta?</a>
                           <br>
-                      <button type="button" class=" btn-sm "><span> Crear una cuenta</span> </button>
+                      <button type="button" class=" btn-sm "  data-toggle="modal" data-target="#registrar"><span> Crear una cuenta</span> </button>
+
+
                       </div>
               </div>
             </div>
