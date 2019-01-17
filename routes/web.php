@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return Redirect('/login');
 });
 
 //Home
-route::get('/index' , 'HomeController@index');
 route::get('/recuperarContraseña' , 'HomeController@recContra');
+Route::get('/inicio', 'HomeController@mostrarInicio');
 //Usuarios
 route::post('/perfil' , 'HomeController@index');
 route::get('/perfil' , 'UsuarioController@mostrarPerfil')->middleware('auth');
@@ -25,8 +25,8 @@ route::get('/editarPerfil' , 'UsuarioController@showEditarPerfil')->middleware('
 route::post('/editarPerfil' , 'UsuarioController@editar');
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
 //posteos
 Route::post('/post', 'PostController@posteo');
-Route::get('/eliminarPost/{id}', 'PostController@eliminar');
+Route::post('/eliminarPost', 'PostController@eliminar');
+Route::get('/listarPost', 'PostController@listarPosteos');
 Route::post('/editarPost', 'PostController@editar');
