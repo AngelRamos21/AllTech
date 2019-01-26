@@ -49,12 +49,12 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-       $validator= new RegistrarUsuarioRequest();
-       $rules= $validator->rules();
-       $messages=$validator->messages();
+      $validator= new RegistrarUsuarioRequest();
+      $rules= $validator->rules();
+      $messages=$validator->messages();
 
-        return Validator::make($data,$rules
-        ,$messages);
+       return Validator::make($data,$rules
+       ,$messages);
     }
 
     /**

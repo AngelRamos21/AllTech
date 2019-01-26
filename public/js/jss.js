@@ -58,7 +58,7 @@ $(document).ready(function() {
                            <div class="modal-body">
                              <form method="post" action="">
                                  <div class="form-group">
-                                 <textarea id="nuevoText" name="post" class="form-control status-box" rows="3">${post.text}</textarea>
+                                 <textarea id="nuevoText" name="post" class="status-box form-control" rows="3">${post.text}</textarea>
                                  </div>
 
                            </div>
@@ -134,6 +134,7 @@ $(document).ready(function() {
 
 
         $('.status-box').keyup(function() {
+
             var postLength = $(this).val().length;
             var charactersLeft = 140 - postLength;
             $('.counter').text(charactersLeft);
@@ -150,11 +151,10 @@ $(document).ready(function() {
             else {
               $('.public').removeClass('disabled');
               $('.public').attr("disabled", false);
-
             }
+            $('.public').addClass('disabled');
        });
 
-       $('.public').addClass('disabled');
 
 
 

@@ -19,14 +19,16 @@ Route::get('/', function () {
 route::get('/recuperarContraseña' , 'HomeController@recContra');
 Route::get('/inicio', 'HomeController@mostrarInicio');
 //Usuarios
-route::post('/perfil' , 'HomeController@index');
-route::get('/perfil' , 'UsuarioController@mostrarPerfil')->middleware('auth');
+
+Route::get('/perfil', 'UsuarioController@mostrarPerfil')->name('home');
 route::get('/editarPerfil' , 'UsuarioController@showEditarPerfil')->middleware('auth');
 route::post('/editarPerfil' , 'UsuarioController@editar');
 
-Auth::routes();
+
 //posteos
 Route::post('/post', 'PostController@posteo');
 Route::post('/eliminarPost', 'PostController@eliminar');
 Route::get('/listarPost', 'PostController@listarPosteos');
 Route::post('/editarPost', 'PostController@editar');
+
+Auth::routes();

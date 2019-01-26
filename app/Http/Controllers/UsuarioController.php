@@ -8,6 +8,12 @@ use App\Http\Requests\EditarUsuarioRequest;
 use App\User;
 class UsuarioController extends Controller
 {
+
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
+
     public function mostrarPerfil()
     {
 
@@ -44,7 +50,7 @@ class UsuarioController extends Controller
 
      $usuario->save();
 
-    return redirect('/perfil');
+    return redirect('/home');
 
 
 

@@ -70,7 +70,7 @@
 
   </div>
   <div class="container__child signup__form">
-    <form action="{{url('/editarPerfil')}}" method="post" enctype="multipart/form-data">
+    <form action="/editarPerfil" method="post" enctype="multipart/form-data">
       @csrf
       <div class="form-group">
         <label for="username">Nombre</label>
@@ -108,7 +108,7 @@
               @endif
        </span>
       </div>
-    
+
       <div class="m-t-lg">
         <ul class="list-inline">
           <li>
