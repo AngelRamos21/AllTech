@@ -50,7 +50,7 @@ class UsuarioController extends Controller
 
      $usuario->save();
 
-    return redirect('/home');
+    return redirect('/perfil');
 
 
 
